@@ -5,9 +5,9 @@ function findMatching(drivers, string) {
   });
 }
 
-function fuzzyMatch(drivers, string) {
+function fuzzyMatch(drivers, fuzz) {
   return drivers.filter(function (driver) {
-    return driver[0,1] === string[0,1];
+    return driver[0,1] === fuzz[0,1];
   });
 }
 
